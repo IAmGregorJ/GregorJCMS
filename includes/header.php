@@ -39,6 +39,6 @@
       ?>
     </div>
     <div class="title">
-      <a href="/">I AM<br/>GREGOR J.</a>
+      <a href="/">I AM<br/>GREGOR<br/>J.</a>
     </div>
     </header>

@@ -1,14 +1,15 @@
 <footer>
   I Am Gregor J. &copy; 2020. All rights reserved.
-  <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
       <img alt="Creative Commons License" style="border-width:0" 
         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
   </a>
   <br />
   This work is licensed under a 
-  <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
     Creative Commons Attribution-ShareAlike 4.0 International License
   </a>.
+  <br/>Icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer">Freepik</a> from <a href="https://www.flaticon.com/packs/hand-drawn/8" target="_blank" rel="noopener norefferer">www.flaticon.com</a>
 </footer>
     <!-- TinyMce -->
     <script src="https://cdn.tiny.cloud/1/hgy0z2f1b4dilmwu2eyggbuw0lh7bd85c0ejtag2m759bvca/tinymce/5/tinymce.min.js" 

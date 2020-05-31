@@ -4,18 +4,27 @@
 @font-face {
     font-family: 'traveling__typewriterregular';
     src: url('travelingtypewriter-webfont.woff') format('woff');
+    src: url('travelingtypewriter-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'GloriaHallelujah';
+    src: url('GloriaHallelujah-Regular.woff') format('woff');
+    src: url('GloriaHallelujah-Regular.woff2') format('woff2')
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
-    font-family: 'traveling__typewriterregular';
-    font-size: 1rem;
 }
 * a {
     text-decoration: none;
 }
 body {
+    font-family: 'traveling__typewriterregular';
+    font-size: 1rem;
     background-image: url('../images/background.jpg');
 }
 /* Header */
@@ -23,6 +32,8 @@ header {
     padding-left:1rem;
 }
 .title {
+    font-family: 'GloriaHallelujah';
+    font-weight:bold;
     margin-left: 20%;
     background-color: limegreen;
     text-align: center;
@@ -32,7 +43,8 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .title a{
-    font-size: 5vw;
+    padding:1vw;
+    font-size: 3.5vw;
     color:black;
     text-decoration:none;
 }
@@ -74,33 +86,41 @@ article {
 }
 /*Sidebar*/
 aside {
+    font-family: 'GloriaHallelujah';
+    font-size:0.9rem;
     float:left;
     width:20%;
     margin-top:1rem;
 }
 aside h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight:bold;
 }
 .search {
     margin-top:2rem;
     background-color:gold;
     padding:1rem;
+    padding-top:0.5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about {
     background-color: orange;
     color:#091D34;
     padding:1rem;
+    padding-top:0.5rem;
     transform:rotate(1deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about a {
     color:#091D34;
     font-weight: bold;
+    text-decoration:underline;
 }
 .latest {
     margin-top:2rem;
+    color:darkblue;
     background-color: hotpink;
+    padding-top:0.5rem;
     padding:1rem;
     transform:rotate(-2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -110,24 +130,29 @@ aside h1 {
 }
 .categories {
     margin-top:2rem;
+    color:#091D34;
     padding:1rem;
+    padding-top:0.5rem;
     background-color: skyblue;
     transform:rotate(2deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .categories a {
-    color: black;
+    color: #091D34;
 }
 .contact {
     margin-top:2rem;
     padding:1rem;
+    padding-top:0.5rem;
     background-color: limegreen;
+    color: #091D34;
     transform:rotate(-3deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .contact a {
     font-weight: bold;
-    color: black;
+    color: #091D34;
+    text-decoration:underline;
 }
 .center {
     text-align:center;
@@ -135,6 +160,8 @@ aside h1 {
 
 /* Footer */
 footer {
+    font-family: 'GloriaHallelujah';
+    font-size:0.8rem;
     display: inline-block;
     width:50%;
     margin-left: 25%;
@@ -185,6 +212,7 @@ label {
     display: inline-block;
 }
 input[type=submit] {
+    font-family: 'traveling__typewriterregular';
     background-color: #4CAF50;
     color: black;
     margin-top:1rem;
@@ -219,6 +247,10 @@ input[type=submit] {
 }
 
 /* Misc */
+input[type="text"] {
+    font-family: 'traveling__typewriterregular';
+}
+
 code {
     font-family: monospace;
     font-size: .9rem;
@@ -266,6 +298,6 @@ img {
         margin:0;
         width: 70vw;
         height:70vw;
-        font-size:16vw;
+        font-size:12vw;
     }
 }

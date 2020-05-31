@@ -46,11 +46,8 @@
         <br/><br/>
         <div class="center">
         <a href="https://twitter.com/intent/follow?screen_name=IAmGregorJ" target="_blank" rel="noopener noreferrer">
-            <img src="/images/twitter-xxl.png" alt="Twitter" title="Follow me on Twitter.">
-        </a>
-        <a href="rss" target="_blank">
-            <img src="/images/rss-xxl.png" class=up alt="RSS" title="RSS feed">
-        </a>
+        <img src="/images/twitter-xxl.png" alt="Twitter" title="Follow me on Twitter."></a>
+        <a href="rss" target="_blank"><img src="/images/rss-xxl.png" class=up alt="RSS" title="RSS feed"></a>
         </div>    
     </div>
 </aside>
