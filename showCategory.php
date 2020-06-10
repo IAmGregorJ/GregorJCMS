@@ -24,9 +24,10 @@ include "functions.php";
     include "includes/aside.php";
 ?>
 <nav>
-<?php
-include "includes/pagination.php";
-?>
+    <a href="/page/1" class="button">First</a>
+    <a href="<?php if($pagenr <= 1){ echo '/#'; } else { echo "/category/".$_GET['category']."/page/".($pagenr - 1); } ?>" class="button">Prev</a>
+    <a href="<?php if($pagenr >= $totalPages){ echo '#'; } else { echo "/category/".$_GET['category']."/page/".($pagenr + 1); } ?>" class="button">Next</a>
+    <a href="<?php echo"/category/".$_GET['category']."/page/".$totalPages;?>" class="button">Last</a>
 </nav>
 
 <?php

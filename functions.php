@@ -419,7 +419,8 @@ function postsByCategory()
     $recordsPerPage = 3;
     $offset = ($pagenr-1) * $recordsPerPage;
 
-    $stmt = $connection->prepare("SELECT COUNT(*) FROM articles");
+    $stmt = $connection->prepare("SELECT COUNT(*) FROM articles WHERE category = ?");
+    $stmt->bind_param("s", $category);
     $stmt->execute();
     $resultTotal = $stmt->get_result();
     $totalRows = $resultTotal->fetch_array()[0];
@@ -508,7 +509,26 @@ function showPost()
 function search()
 {
     global $connection;
+    // se kommentarer under latestposts()
+    if(isset($_GET['pagenr']))
+    {
+        $pagenr = $_GET['pagenr'];
+    }
+    else
+    {
+        $pagenr = 1;
+    }
 
+    $recordsPerPage = 3;
+    $offset = ($pagenr-1) * $recordsPerPage;
+
+    $stmt = $connection->prepare("SELECT COUNT(*) FROM articles");
+    $stmt->execute();
+    $resultTotal = $stmt->get_result();
+    $totalRows = $resultTotal->fetch_array()[0];
+    $totalPages = ceil($totalRows/$recordsPerPage);
+    $return = array($pagenr,$totalPages);
+    
     if(isset($_POST['searching']))
     {
         // dette skal arbejdes på!!!
@@ -527,24 +547,25 @@ function search()
                 $queryCondition .= " OR ";
             }
         }
-        $orderBy = " ORDER BY id desc";
+//      $orderBy = " ORDER BY id DESC LIMIT $offset, $recordsPerPage";
+        $orderBy = " ORDER BY id DESC";
 
         $stmt = $connection->prepare("SELECT * FROM articles " . $queryCondition . $orderBy);
         $stmt->execute();
     
         $result = $stmt->get_result();        
-        $queryResult = $result->num_rows;
+        $queryResult = $result->fetch_array()[0];
 
         if($queryResult != 0)
         {
             echo "<p style='color:gold'>There ";
                 if($queryResult == 1)
                 {
-                    echo "is 1 result ";
+                    echo "is 1 post ";
                 }
                 elseif($queryResult > 1)
                 {
-                    echo "are " . $queryResult . " results ";
+                    echo "are " . $queryResult . " posts ";
                 }
             echo "matching your search.</p>";
         }
@@ -562,9 +583,10 @@ function search()
         }
         else
         {
-            echo "<p style='color:gold'>There are no results matching your search.</p>";
+            echo "<p style='color:gold'>There are no posts matching your search.</p>";
         }
-        $stmt->close(); 
+        $stmt->close();
+        return $return;
     }
 }
 

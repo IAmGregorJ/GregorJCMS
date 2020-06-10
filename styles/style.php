@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'traveling__typewriterregular';
     src: url('travelingtypewriter-webfont.woff') format('woff');
-    src: url('travelingtypewriter-webfont.woff2') format('woff2');
+    <!-- src: url('travelingtypewriter-webfont.woff2') format('woff2'); -->
     font-weight: normal;
     font-style: normal;
 }
@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'GloriaHallelujah';
     src: url('GloriaHallelujah-Regular.woff') format('woff');
-    src: url('GloriaHallelujah-Regular.woff2') format('woff2')
+    <!-- src: url('GloriaHallelujah-Regular.woff2') format('woff2') -->
     font-style: normal;
 }
 
@@ -40,7 +40,7 @@ header {
     width: 20vw;
     height:20vw;
     transform:rotate(-10deg);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .title a{
     padding:1vw;
@@ -66,7 +66,7 @@ article {
     margin-bottom:2rem;
     margin-right:2rem;
     background-color: whitesmoke;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .post a {
     text-decoration: none;
@@ -101,7 +101,7 @@ aside h1 {
     background-color:gold;
     padding:1rem;
     padding-top:0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .about {
     background-color: orange;
@@ -109,7 +109,7 @@ aside h1 {
     padding:1rem;
     padding-top:0.5rem;
     transform:rotate(1deg);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .about a {
     color:#091D34;
@@ -123,7 +123,7 @@ aside h1 {
     padding-top:0.5rem;
     padding:1rem;
     transform:rotate(-2deg);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .latest a {
     color:darkblue;
@@ -135,7 +135,7 @@ aside h1 {
     padding-top:0.5rem;
     background-color: skyblue;
     transform:rotate(2deg);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .categories a {
     color: #091D34;
@@ -147,7 +147,7 @@ aside h1 {
     background-color: limegreen;
     color: #091D34;
     transform:rotate(-3deg);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .contact a {
     font-weight: bold;
@@ -168,7 +168,7 @@ footer {
     margin-top: 2rem;
     background-color: magenta;
     padding:1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 footer a {
     color:darkblue;
@@ -225,7 +225,7 @@ input[type=submit] {
     margin-left: 15%;
     background-color: gold;
     padding: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .lab {
     float: left;
@@ -269,7 +269,7 @@ img {
     background-color: orange;
     text-align: center;
     transform:rotate(20deg);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .error h1 {
     font-size:6vw;

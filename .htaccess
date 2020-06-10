@@ -41,9 +41,10 @@ RewriteRule ^delete/([^/.]+)?$ /deletePost?id=$1 [L]
 RewriteRule ^likes/([^/.]+)?$ /likePost?id=$1 [L]
 
 ## For categories
-RewriteRule ^category/([^/.]+)?$ /showCategory?category=$1 [L]
+RewriteRule ^category/([^/.]+)/?$ /showCategory?category=$1 [L]
+RewriteRule ^category/([^/.]+)/page/([^/.]+)?$ /showCategory?category=$1&pagenr=$2 [L]
 
-## For paginating
+## For paginating root
 Rewriterule ^page/([^/.]+)?$ /?pagenr=$1 [L]
 
 # 404
