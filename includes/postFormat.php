@@ -15,9 +15,9 @@
         $plural = "likes";
     }
     if(isLiked($post->id) == "true") {
-        echo "<div class='right' id='post" . $id . "'><span class='likes'>" . getLikes($id) . " ".$plural." </span><img src='/images/liked.png' title='Thanks for liking!' height='32' width='32' alt='Like button - liked'></div>";
+        echo "<div class='right' id='post" . $id . "'><span class='likes'>" . getLikes($id) . " ".$plural." </span><img src='/images/liked.png' title='Thanks for liking!' height='32' width='32' alt='Like button - liked' tabindex='0'></div>";
     } else {
-        echo "<div class='right' id='post" . $id . "'><span class='likes'>" . getLikes($id) . " ".$plural." </span><img src='/images/like.png' id='thumb' title='Like it?' height='32' width='32' alt='Like button' onClick='likeButton(" . $id . ");'></div>";
+        echo "<div class='right' id='post" . $id . "'><span class='likes'>" . getLikes($id) . " ".$plural." </span><img src='/images/like.png' id='thumb' title='Like it?' height='32' width='32' alt='Like button' tabindex='0' onClick='likeButton(" . $id . ");'></div>";
     }
 
     echo "Posted to: <a href='/category/" . $post->category . "'>" . $post->category . "</a>";
@@ -30,7 +30,6 @@
     $replace = array('%20', '%22');
     $cleanTitle = preg_replace($find, $replace, $post->title);
     echo "<div class='right'><a href='https://twitter.com/intent/tweet?text=".$cleanTitle."&url=https%3A%2F%2FGregorJ.org%2Farticle%2F".$id.
-        "&via=iAmGregorJ' target='_blank' rel='noopener noreferrer'><img src='/images/twitter-xxl.png' title='Share this post on Twitter' 
-        alt='Share this post on Twitter' height='32' width='32''></a></div>";
+        "&via=iAmGregorJ' target='_blank' rel='noopener noreferrer'><img src='/images/twitter-xxl.png' alt='Share this post on Twitter' height='32' width='32''></a></div>";
     echo "</div>";
 ?>

@@ -25,6 +25,7 @@
 body {
     font-family: 'traveling__typewriterregular';
     font-size: 1rem;
+    background-color: #272727;
     background-image: url('../images/background.jpg');
 }
 /* Header */
@@ -66,6 +67,7 @@ article {
     margin-bottom:2rem;
     margin-right:2rem;
     background-color: whitesmoke;
+    text-color: nero;
     box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
 }
 .post a {
@@ -255,6 +257,10 @@ code {
     font-family: monospace;
     font-size: .9rem;
     background-color: azure;
+}
+blockquote {
+    border-left: 10px solid #ccc;
+    padding: 0.5em 10px;
 }
 img {
     max-width: 100%;

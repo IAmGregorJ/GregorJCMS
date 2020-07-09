@@ -1,1 +1,16 @@
-db.php needs to be placed OUTSIDE the root folder.
+This CMS is a project I worked on for my course in "Web Technologies" at the Technological University of Denmark, spring semester 2020.
+I don't consider it a completely finished product, although the sofware works quite well, without any bugs that I can find. I've been using it on https://gregorj.org since completion.
+
+If you want to use this software, there are a few minor modifications you need to make: namely db information in db.php.
+First of all, db.php needs to be placed OUTSIDE the root folder for it to work (and for security reasons, obviously). You also need a MySQL database with the following tables:
+
+articles:
+    id/pubDate/title/permalink/summary/content/category/author
+
+users:
+    id/username/password/email/rand
+
+likes:
+    id/article_id/ip_address
+
+I know, that identifying users by ip address (for the likes) isn't the ideal, but I wanted to stick to my commitment NOT to use cookies (you can see the privacy statement on my site), and truth be told, it's a small site with very few viewers, so I can't imagine that like-spamming will be a problem. Yet.
